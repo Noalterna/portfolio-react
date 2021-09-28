@@ -1,53 +1,10 @@
-.App {
-  text-align: center;
-  background-color: #F8E5E5;
-}
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.App-logo {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  justify-self: start;
-  align-self: center;
-  color: #FA255E;
-  font-family:'Niconne';
-  font-size: 32px;
-  line-height: 26px;
-  display: table;
-  width: 20px;
-  text-align: start;
-  
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    touch-action: none;
 }
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-.about {
-  grid-column-start: 6;
-  grid-column-end: 7;
-  justify-self: end;
-  align-self: center;
-}
-.App-header {
-  display: grid;
-  grid-template-columns: 120px repeat(5, auto) 120px;
-  background-color: #F8E5E5;
-  font-size:32px;
-  color: black;
-  font-family: 'Bebas Neue';
-
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

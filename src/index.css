@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
-  background-color: #F8E5E5 ;
+  background-color: #F9F9F9 ;
 }
 
