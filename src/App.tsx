@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
         <div></div>
         <p>3</p>
         <div></div>
-        </div>
+      </div>
       <div>
         <p>Project Title</p>
         <p>Project brief</p>
