@@ -1,0 +1,16 @@
+#Project-title{
+    font-family:"Bebas Neue";
+    font-size: 2.8rem;
+}
+#Project-brief{
+    font-family:"Poppins";
+}
+
+.project-container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left:5vw;
+    margin-right:5vw;
+}

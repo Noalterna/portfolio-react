@@ -9,17 +9,9 @@ const Home = () => {
         <>
         <Navbar/>
             <div className="App">
-                <div>
-                    <p>1</p>
-                    <div></div>
-                    <p>2</p>
-                    <div></div>
-                    <p>3</p>
-                    <div></div>
-                </div>
-                <div>
-                    <p>Project Title</p>
-                    <p>Project brief</p>
+                <div className="project-container">
+                    <h1 id="Project-title">Train Delay Mobile Application</h1>
+                    <p id="Project-brief">Train Delay is a mobile app that let's you check if your train is late.</p>
 
                 </div>
 
