@@ -3,7 +3,7 @@ import { Route } from 'react-router';
 import '../about.css';
 import '../App.css';
 import NavbarAbout from '../components/Navbar-about';
-import { BehanceOutlined, LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
+import { BehanceOutlined, LinkedinFilled, GithubOutlined } from '@ant-design/icons';
 import TypeWriter from 'typewriter-effect';
 
 const About = () => {
@@ -32,7 +32,9 @@ const About = () => {
                 </div>
             </div>
             <div id="social-line">
-
+                <a href=""><BehanceOutlined className="social-icons"/></a>
+                <LinkedinFilled className="social-icons" />
+                <GithubOutlined className="social-icons" />
             </div>
         </>
     )
