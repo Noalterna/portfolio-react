@@ -1,33 +1,102 @@
-.Navbar-container {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 5vw;
-  margin-right:5vw;
-  z-index: 999;
-  top:0;
-  position: sticky;
-  align-items:center;
-  height: 80px;
-  text-align:center;
-  font-size:1.4rem;
+.text{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 1.4rem;
 }
 
-.Navbar-logo {
-  display: flex;
-  justify-self: flex-start;
-  align-items: center;
-  color: #FA255E;
-  font-family:'Niconne';
-  line-height: 26px;
-  display: table;
-  width: 20px;
-  text-align: start;
+#Mail-button {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.2vmin;
+    height:fit-content;
+    background-color: #EB0542;
+    border-radius: 20px;
 }
-#Menu-item {
-  display: flex;
-  align-items: center;
-  color: black;
-  font-family: 'Bebas Neue';
-  justify-content: flex-end;
+
+
+#mail{
+    padding-left: 8px;
 }
-  
+
+#logo{  
+    display: flex;
+    text-align: start;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #EB0542;
+    font-family: Niconne;
+    line-height: 15pt;
+    width:14px;
+    text-decoration: none;
+    cursor: inherit;
+    height:80px;
+}
+
+#copy-text {
+    align-items: center;
+}
+
+.Navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+  }
+
+  .Navbar {
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    top:0;
+    position: sticky;
+    align-items:center;
+    height: 80px;
+    text-align:center;
+    font-size:1.4rem;
+  }
+  .HamburgerIcon {
+    display: none;
+    color:white;
+}
+.Navbar-section {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-right: -22px;
+}   
+.NavItem {
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+
+@media screen and (max-width: 500px){
+
+}
+@media screen and (max-width: 900px) {
+    .Navbar {
+        transition: 0.8s all ease;
+    }
+    .HamburgerIcon {
+        display: block;
+        position: absolute;
+        top:0;
+        right:0;
+        transform: translate(-100%,60%);
+        font-size: 1.8rem;
+        cursor: none;
+
+    }
+    .Navbar-section {
+        display: none;
+    }
+}

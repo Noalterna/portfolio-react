@@ -1,23 +1,21 @@
-import React from "react";
-import '../home.css';
-import '../App.css'
+import React from 'react';
+import { Route } from 'react-router';
+import HeroSection from '../components/HeroSection';
+import '../App.css';
 import Navbar from '../components/Navbar';
+import ProjectSection1 from '../components/ProjectSectionOne';
 
-const Home = () => {
+const About = () => {
+    
+
     return (
-        document.body.style.backgroundColor = '#F9F9F9',
+        document.body.style.backgroundColor = '#111010',
         <>
-        <Navbar/>
-            <div className="App">
-                <div className="project-container">
-                    <h1 id="Project-title">Train Delay Mobile Application</h1>
-                    <p id="Project-brief">Train Delay is a mobile app that let's you check if your train is late.</p>
-
-                </div>
-
-            </div>
+            <Navbar />
+            <HeroSection/>
+            <ProjectSection1/>
         </>
     )
 };
 
-export default Home;
+export default About;
