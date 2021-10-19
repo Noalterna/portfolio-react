@@ -45,6 +45,10 @@ body {
   } 
 
 
-  @media screen and (max-width: 900px) {}
+  @media screen and (max-width: 900px) {
+    #cursor {
+      visibility: hidden;
+    }
+  }
     /* TODO: usunac kursor z mobilnej wersji */
   

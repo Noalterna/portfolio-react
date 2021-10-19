@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { MailOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHamburger } from '@fortawesome/free-solid-svg-icons';
-import {expand, shrink} from '../cursor';
+import { expand, shrink } from '../cursor';
 
 
 function NavbarAbout() {
@@ -28,13 +28,13 @@ function NavbarAbout() {
                         Adrianna Łuczak
                     </Link>
                     <div className="HamburgerIcon">
-                        <FontAwesomeIcon icon={faHamburger}/>
+                        <FontAwesomeIcon icon={faHamburger} />
                     </div>
                     <div className="Navbar-section text">
                         <Link to="/about" className="NavItem">
                             <span onMouseEnter={() => expand()} onMouseLeave={() => shrink()}>About</span>
                         </Link>
-                        <Link to="/resume.pdf" className="NavItem" >
+                        <Link to="/resume.pdf" target="_blank" className="NavItem" >
                             <span onMouseEnter={() => expand()} onMouseLeave={() => shrink()}> Resume</span>
                         </Link>
                         <a href="mailto:adalucz13@gmail.com" className="text NavItem" id="Mail-button" onClick={copy} onMouseEnter={() => expand()} onMouseLeave={() => shrink()}>
