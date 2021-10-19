@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { CloseCircleFilled } from '@ant-design/icons'
 import { Link as LinkR } from 'react-router-dom';
 
-export const SidebarContainer = styled.aside`
+export const SidebarContainer = styled.aside<{isOpen :boolean}>`
     position: fixed;
     z-index: 999;
     width:100%;
@@ -12,10 +12,11 @@ export const SidebarContainer = styled.aside`
     align-items:center;
     top: 0;
     left: 0;
-    transition: 0.3s ease-in-out;`
-    /* opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */ 
-
+    transition: 0.3s ease-in-out;
+    font-family: "Bebas Neue";
+    opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; 
+`
 
 export const CloseIcon = styled(CloseCircleFilled)`
     color: white
@@ -36,14 +37,14 @@ export const SidebarWrapper = styled.div`
 `
 export const SidebarMenu = styled.div`
     display: grid;
-    grid-template-column: 1fr;
-    grid-template-row: repeat(5, 80px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
     text-align: center;
 
     @media screen and (max-width: 480px ) {
-        grid-template-rows: repeat(5, 60px);
+        grid-template-rows: repeat(6, 60px);
     }
-`
+`;
 
 export const SidebarLink = styled(LinkR)`
     display:flex;
