@@ -24,27 +24,30 @@ a:active, a:focus {
 }
 
 #hello {
-    font-family: 'Bebas Neue';
-    color: white;
+    color: black;
     cursor: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 #name {
-    font-family: 'Niconne';
-    color: #EB0542;
+    font-family: 'Major Mono Display' /*'Niconne'*/;
+    color: black;/*#EB0542;*/
     text-align: start;
+    align-self:center;
+    font-weight:800;
     grid-column-start:3;
     cursor: inherit;
     width:200px;
     text-decoration: none;
 }
 .Iam-description {
-    color:white;
-    font-family: 'Poppins';
+    color:black;
     text-align: start;
     grid-column-start: 3;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
-    line-height: 4px;
+    line-height: 8px;
     text-decoration: none;
 }
 #social-line {
@@ -60,19 +63,19 @@ a:active, a:focus {
     
 }
 .social-icons {
-    color: white;
+    color: black;
     font-size:2.0rem;
 }
 .down-arrow {
-    scale: 2;
-    color: white;
-    margin: auto;
+    color: black;
     display: flex;
     position: absolute;
-    bottom:20px;
+    bottom:38px;
     justify-content: center;
     width:100%;
     text-decoration: none;
+    z-index:2;
+    padding: 0px;
 }
 
 @media screen and (max-width: 500px) {
@@ -84,5 +87,11 @@ a:active, a:focus {
     }
     .container-flex {
         margin: 20vw;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .down-arrow {
+        bottom: 48px;
     }
 }

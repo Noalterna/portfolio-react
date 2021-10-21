@@ -1,27 +1,18 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router';
-import HeroSection from '../components/HeroSection';
+import HeroSection from '../components/HeroSection/HeroSection';
 import '../App.css';
 import Navbar from '../components/Navbar/Navbar';
-import ProjectSection1 from '../components/ProjectSectionOne';
+import ProjectSectionOne from '../components/ProjectSectionOne/ProjectSectionOne';
 import Sidebar from '../components/Sidebar/Sidebar';
 
-const About = () => {
-    
-    const[isOpen, setIsOpen] = useState(false);
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
-
+const Home = () => {
     return (
-        document.body.style.backgroundColor = '#111010',
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle= {toggle}/>
-            <HeroSection />
-            <ProjectSection1 />
+           <HeroSection />
+           <ProjectSectionOne />
         </>
     )
 };
 
-export default About;
+export default Home;

@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 a {
     text-decoration: none;
@@ -11,32 +16,43 @@ a {
 
 html {
     height: 100vh; /* requires for stable body height */
+    min-height: 100vh;
+    scroll-behavior: smooth;
   }
   
 body {
   margin:0;
   height: 100vh; /* requires for 'mix-blend-mode' */
+  min-height: 100vh;
+  position: relative;
   overflow-x: hidden;
   cursor: none; 
-  color: #000;
+  color: black;
+  background: white;
   user-select: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   vertical-align: baseline;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
+  
+  }
+  body::after{
+    content: '';
+    display:block;
+    height:36px;
   }
   
 #cursor {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #EB0542;
+    background: white; /* #EB0542 */
     border-radius: 50%;
     top: var(--y, 0);
     left: var(--x, 0);
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 1000;
     pointer-events: none;
     mix-blend-mode: difference;
     transition: all 0.2s ease-in;
@@ -48,6 +64,9 @@ body {
   @media screen and (max-width: 900px) {
     #cursor {
       visibility: hidden;
+    }
+    body::after {
+      height: 48px;
     }
   }
     /* TODO: usunac kursor z mobilnej wersji */

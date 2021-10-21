@@ -1,0 +1,9 @@
+.social-icons {
+    font-size: 124%;
+}
+
+@media screen and (max-width: 900px) {
+    .social-icons {
+        font-size: 180%;
+    }
+}

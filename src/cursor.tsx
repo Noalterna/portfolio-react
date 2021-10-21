@@ -1,5 +1,3 @@
-import React from "react";
-
 export function expand() {
     const cursor = document.getElementById("cursor");
     cursor.style.transform = "scale(3.5)";
